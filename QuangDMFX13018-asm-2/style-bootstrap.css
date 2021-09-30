@@ -1,0 +1,45 @@
+body {
+  color: #333333;
+}
+
+.font-serif {
+  font-family: Cambria, Garamond, Georgia, Times, 'Times New Roman', serif;
+}
+
+#navbar a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #5a5a5a;
+}
+
+#navbar a:hover {
+  color: #333333;
+}
+
+#banner {
+  color: #fff;
+}
+
+#main-content > :first-child, #footer > :first-child {
+  padding-top: 60px;
+  padding-bottom: 50px;
+}
+
+#main-content {
+  background-color: #efefef;
+}
+
+#footer {
+  background-color: #f7f7f7;
+}
+
+#footer a {
+  color: #00b0ff;
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: solid 1px transparent;
+}
+
+#footer a:hover {
+  border-bottom: solid 1px #00b0ff;
+}
