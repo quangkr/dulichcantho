@@ -1,0 +1,95 @@
+/* vim: set ft=css foldmethod=marker foldlevel=10 : */
+
+#banner {
+  width: 100%;
+  height: 100vh;
+  background: linear-gradient(#000000aa, #000000aa), url(images/stock/cau-can-tho.jpg) right center/cover;
+}
+
+@keyframes fade-and-pop-down {
+  0% {
+    transform: translateY(-5ex);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-and-pop-left {
+  0% {
+    transform: translateX(20ch);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fade-and-pop-right {
+  0% {
+    transform: translateX(-20ch);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+#banner-title, #banner-subtitle, #banner-button {
+  animation-fill-mode: forwards;
+  animation-duration: 1s;
+  animation-delay: 0.3s;
+  animation-timing-function: ease;
+}
+
+#banner-title {
+  animation-name: fade-and-pop-down;
+}
+
+#banner-subtitle {
+  animation-name: fade-and-pop-left;
+}
+
+#banner-button {
+  animation-name: fade-and-pop-right;
+}
+
+.gallery-img {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1 / 1;
+}
+
+.gallery-description {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(#0006, #0006);
+}
+
+.gallery-description p {
+  color: white;
+  text-align: center;
+}
+.gallery-img img {
+  width: auto;
+  height: 100%;
+  transition: transform 0.2s ease-in;
+}
+
+.gallery-img:hover img {
+  transform: scale(1.1);
+}
