@@ -14,9 +14,28 @@
     <link rel="stylesheet" href="style-common.css" />
     <link rel="stylesheet" href="style-content.css" />
 
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=174304154851125&autoLogAppEvents=1" nonce="j6ehcLbz"></script>
+    <!-- facebook plugin -->
+    <script
+      async defer
+      crossorigin="anonymous"
+      src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v12.0&appId=174304154851125&autoLogAppEvents=1"
+      nonce="j6ehcLbz"
+    ></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-2TL77X60YW"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-2TL77X60YW');
+    </script>
+
     <script src="script.js" defer></script>
+
   </head>
+
   <body>
 
     <svg
@@ -75,7 +94,14 @@
         <figcaption>Hình ảnh Bến Ninh Kiều (sưu tầm)</figcaption>
       </figure>
 
-      <div class="fb-like" data-href="https://developers.facebook.com/docs/plugins/" data-width="" data-layout="button_count" data-action="like" data-size="large" data-share="true"></div>
+      <div class="fb-like"
+        data-href="https://developers.facebook.com/docs/plugins/"
+        data-width=""
+        data-layout="button_count"
+        data-action="like"
+        data-size="large"
+        data-share="true"
+      ></div>
     </section>
 
   </body>
