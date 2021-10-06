@@ -3,7 +3,7 @@
 #banner {
   width: 100%;
   height: 100vh;
-  background: linear-gradient(#000000aa, #000000aa), url(images/stock/cau-can-tho.jpg) right center/cover;
+  background: linear-gradient(#000000aa, #000000aa), url(images/caucantho.jpg) right center/cover;
 }
 
 @keyframes fade-and-pop-down {
@@ -77,19 +77,26 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-image: linear-gradient(#0006, #0006);
+  font-size: 1.2rem;
+  background-image: linear-gradient(#0008, #0008);
 }
 
 .gallery-description p {
   color: white;
   text-align: center;
+  transition: transform 0.2s ease-in;
 }
+
 .gallery-img img {
   width: auto;
   height: 100%;
   transition: transform 0.2s ease-in;
 }
 
-.gallery-img:hover img {
+.gallery-img:hover img, .gallery-img:hover p {
   transform: scale(1.1);
+}
+
+.gallery-img:hover .gallery-description {
+  background-image: linear-gradient(#0005, #0005);
 }
