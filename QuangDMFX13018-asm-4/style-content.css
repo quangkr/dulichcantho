@@ -80,7 +80,8 @@
   padding: 4rem 0;
 }
 
-#content :not(figure):not(img) {
+#content p {
+  font-size: 1.1em;
   margin-left: 3rem;
   margin-right: 3rem;
 }
@@ -92,9 +93,19 @@
   margin-bottom: 2rem;
 }
 
+#content figcaption {
+  font-size: 1em;
+}
+
 #content img {
   width: 100%;
   height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  #content {
+    font-size: 1.1rem;
+  }
 }
 
 @media only screen and (min-width: 1024px) {
@@ -118,11 +129,12 @@
     width: 55vw;
     margin: 4rem 5rem 4rem auto;
     padding: 5rem 5rem;
+    font-size: 1.15rem;
     background-color: white;
     box-shadow: 3px 3px 30px 1px #0004;
   }
 
-  #content :not(figure):not(img) {
+  #content p {
     margin-left: 0;
     margin-right: 0;
   }
